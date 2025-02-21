@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.index-container{
+    height:100vh;
+    width: 100vw;
+    background-image: url("2.png");
+    background-color: black;
+    background-size: cover;
+    animation: bgmove 25s ease-in-out 0s infinite alternate ;
+}
+.index-navbar{
+    width: 100vw;
+    height: 10vh;
+    background-color: rgba(148, 54, 206, 0.3);
+    backdrop-filter: blur(10px);
+    
+}
+.index-welcome{
+    padding-top: 30vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+}
+.index-navbar {
+    
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    text-decoration: none;
+    font-size: 25px;
+    gap: 5vw;
+}
+.index-navbar a {
+    padding-right: 3vw;
+    color: white;
+    text-decoration: none;
+}
+.index-navbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+@media (max-width:520px) {
+    .index-welcome{
+        font-size: 50px;
+    }
+    
+}
+@keyframes bgmove{
+    100%{
+        background-position-x: -5000px;
+    }
+}
